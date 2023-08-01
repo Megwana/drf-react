@@ -3,6 +3,7 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import '../styles/navbar.css';
 import runningLogo from '../assets/running.png'
 
+
 const NavBar = () => {
   return (
     <Navbar expand="lg" variant="dark" className="custom-navbar">
