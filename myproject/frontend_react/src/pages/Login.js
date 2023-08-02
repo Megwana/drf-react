@@ -2,7 +2,7 @@ import React from 'react';
 import NavBar from '../components/NavBar';
 
 
-function Home() {
+function Login() {
     return (
         <div>
             <NavBar /> 
@@ -11,4 +11,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Login;

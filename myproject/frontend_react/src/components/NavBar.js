@@ -9,7 +9,7 @@ const NavBar = () => {
     <Navbar expand="lg" variant="dark" className="custom-navbar">
       <div className="container">
         <div className='navbar-brand-container'>
-          <Navbar.Brand href="/">hotFeet <img src={runningLogo} alt="Running Logo" className="running-logo" />
+          <Navbar.Brand href="/"><b>Hot</b>Feet <img src={runningLogo} alt="Running Logo" className="running-logo" />
           </Navbar.Brand>
         </div>
         <Navbar.Toggle aria-controls="navbar-nav" />
