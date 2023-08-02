@@ -35,7 +35,15 @@ SECRET_KEY = 'django-insecure-4df8qx8)hvh+)89-ex2rf_a5zt42wqpspr5$55th2(4d%62y!+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '8000-megwana-drfreact-lc00oiiyyqy.ws-eu102.gitpod.io',
+    'localhost',
+    '127.0.0.1:8000'
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-megwana-drfreact-lc00oiiyyqy.ws-eu102.gitpod.io'
+]
 
 
 # Application definition
@@ -51,6 +59,8 @@ INSTALLED_APPS = [
     'cloudinary',
     'hotfeet_reviews',
     'rest_framework',
+
+    'profiles',
 ]
 
 MIDDLEWARE = [
