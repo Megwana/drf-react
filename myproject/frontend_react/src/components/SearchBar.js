@@ -15,7 +15,7 @@ function SearchBar() {
               className="me-2 flex-grow-1"
               aria-label="Search"
             />
-            <Button variant="outline-success">
+            <Button variant="dark">
             <FontAwesomeIcon icon={faMagnifyingGlass} />
             </Button>
           </Form>

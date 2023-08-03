@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import '../styles/navbar.css';
-import runningLogo from '../assets/running.png'
-
+import runningLogo from '../assets/running.png';
 
 const NavBar = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <Navbar expand="lg" variant="dark" className="custom-navbar">
       <div className="container">
@@ -12,7 +15,9 @@ const NavBar = () => {
           <Navbar.Brand href="/"><b>Hot</b>Feet <img src={runningLogo} alt="Running Logo" className="running-logo" />
           </Navbar.Brand>
         </div>
-        <Navbar.Toggle aria-controls="navbar-nav" />
+        <Navbar.Toggle aria-controls="navbar-nav" onClick={() => setOpen(!open)}>
+          <FontAwesomeIcon icon={open ? faTimes : faBars} />
+        </Navbar.Toggle>
         <Navbar.Collapse id="navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
