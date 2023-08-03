@@ -1,5 +1,7 @@
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import '../styles/searchbar.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 function SearchBar() {
   return (
@@ -14,7 +16,7 @@ function SearchBar() {
               aria-label="Search"
             />
             <Button variant="outline-success">
-              Search
+            <FontAwesomeIcon icon={faMagnifyingGlass} />
             </Button>
           </Form>
         </Col>
