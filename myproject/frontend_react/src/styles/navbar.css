@@ -38,6 +38,11 @@
 }
 }
 
-  
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-size: 1.4rem; /* Adjust size as needed */
+  margin-right: 20px;
+}
 
   
