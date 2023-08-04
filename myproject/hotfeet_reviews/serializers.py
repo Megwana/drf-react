@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Shoe, Review, Category
+from .models import Shoe, Review, Category, Brand
 
 class ShoeSerializer(serializers.ModelSerializer):
     class Meta:
@@ -15,3 +15,8 @@ class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
         fields = '__all__'
+
+class BrandSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Brand
+        fields = ['id', 'name']
